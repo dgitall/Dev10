@@ -31,6 +31,13 @@ create table [Group] (
     [Name] varchar(25) not null,
 )
 
+create table Track (
+    TrackID int primary key identity(1, 1),
+    [Name] varchar(20) not null,
+    [Length] TIME null,
+    Writers varchar (300) null
+    
+)
 -- Bridge table tying artists to groups
 create table ArtistGroup (
     GroupID int not null,
@@ -47,12 +54,6 @@ create table ArtistGroup (
         references [Group](GroupId),
 )
 
-create table Track (
-    TrackID int primary key identity(1, 1),
-    [Name] varchar(20) not null,
-    [Length] TIME not null
-)
-
 create table TrackAlbum (
     TrackID int not null,
     AlbumID int not null, 
@@ -66,7 +67,7 @@ create table TrackAlbum (
     constraint fk_TrackAlbum_AlbumID
         foreign key (AlbumID)
         references [Album](AlbumID),
-)
+);
 
 -- Bridge table tying groups to tracks
 create table GroupTrack (
@@ -80,4 +81,18 @@ create table GroupTrack (
     constraint fk_GroupTrack_GroupId
         foreign key (GroupId)
         references [Group](GroupId),
-)
+);
+
+-- Bridge table tying groups to tracks
+create table FeaturingTrack (
+    ArtistID int not null,
+    TrackID int not null, 
+    constraint pk_FeaturingTrack
+        primary key (TrackID, ArtistID),
+    constraint fk_FeaturingTrack_TrackID
+        foreign key (TrackID) 
+        references Track(TrackID),
+    constraint fk_FeaturingTrack_ArtistID
+        foreign key (ArtistID)
+        references [Artist](ArtistID),
+);
