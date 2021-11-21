@@ -38,9 +38,9 @@ create table Souvenir (
     CategoryID int not null,
     [Name] varchar(200) not null,
     Description varchar(500) NULL,
-    Weight int null,
-    Price int null,
-    DateObtained date null,
+    Weight float null,
+    Price float null,
+    DateObtained datetime2 null,
     constraint fk_Souvenir_FeatureID
         foreign key (OwnerID)
         references Owner(OwnerID),
@@ -51,3 +51,5 @@ create table Souvenir (
         foreign key (CategoryID)
         references Category(CategoryID)
 )
+
+
