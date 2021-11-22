@@ -13,24 +13,24 @@ GO
 -- Create the most basic elements in the database
 create table [Owner] (
     OwnerID int primary key identity(1,1),
-    [Name] varchar(20) not null
+    [Name] nvarchar(20) not null
     constraint uq_Owner_Name
         unique ([Name])
 )
 
 create table Category (
     CategoryID int primary key identity(1,1),
-    [Name] varchar(50) not null,
-    Description varchar(500) null
+    [Name] nvarchar(50) not null,
+    Description nvarchar(500) null
     constraint uq_Category_Name
         unique([Name])
 )
 
 create table TravelLocation (
     TravelLocationID int primary key identity(1,1),
-    City varchar(50) null,
-    Region varchar(50) null,
-    Country varchar(50) null,
+    City nvarchar(50) null,
+    Region nvarchar(50) null,
+    Country nvarchar(50) null,
     Longitude float null,
     Latitude float null
     constraint uq_TravelLocation_City_Region_Country_Long_Lat
@@ -46,8 +46,8 @@ create table Souvenir (
     OwnerID int not null,
     TravelLocationID int not null,
     CategoryID int not null,
-    [Name] varchar(200) not null,
-    Description varchar(500) NULL,
+    [Name] nvarchar(200) not null,
+    Description nvarchar(500) NULL,
     Weight float null,
     Price float null,
     DateObtained datetime2 null,

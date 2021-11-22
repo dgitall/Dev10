@@ -8,12 +8,12 @@ SELECT * FROM TempSouvenirs
 
 -- Owner Table
 -- Test select to get the unique group names
-SELECT distinct Owner
-from TempSouvenirs
--- Do an insert using that selection to fill out the owner table
--- The select pulls out the names of different owner names. The insert puts that into the Name in Owner table
+SELECT DISTINCT Owner
+FROM TempSouvenirs
+-- Do an INSERT using that selection to fill out the owner table
+-- The select pulls out the names of different owner names. The INSERT puts that into the Name in Owner table
 -- NOTE: The ID is an identity so it auto fills with incrementing values and we don't add it.
-insert into Owner ([Name])    
+INSERT INTO Owner ([Name])    
     SELECT DISTINCT Owner
     FROM TempSouvenirs;
 -- Confirm.
@@ -22,38 +22,38 @@ SELECT * FROM Owner;
 
 -- Category Table
 -- Test select to get the unique category names
-SELECT distinct Category
-from TempSouvenirs
--- Do an insert using that selection to fill out the owner table
--- The select pulls out the names of different owner names. The insert puts that into the Name in Owner table
+SELECT DISTINCT Category
+FROM TempSouvenirs
+-- Do an INSERT using that selection to fill out the owner table
+-- The select pulls out the names of different owner names. The INSERT puts that into the Name in Owner table
 -- NOTE: The ID is an identity so it auto fills with incrementing values and we don't add it.
 -- NOTE: I added a description field because it may be useful later. However, there is no data in the file
 --      so they are all NULL.
-insert into Category ([Name])    
-    SELECT distinct Category
-    from TempSouvenirs
+INSERT INTO Category ([Name])    
+    SELECT DISTINCT Category
+    FROM TempSouvenirs
 -- Confirm.
 SELECT * FROM Category;
 
 
 -- TravelLocation Table
--- Test select to get the unique travel locations. This looks for distinct combinations across all fields which
+-- Test select to get the unique travel locations. This looks for DISTINCT combinations across all fields which
 -- should work for cases like where you have multiple cities with the same name in a country but they are in different
 -- regions. The city, region, and courty values that are empty are changed to [Unknown] since they probably exists
--- when the location is specified by the Long/Lat but it isn't known from this data set. Also, note that the cases 
+-- when the location is specified by the Long/Lat but it isn't known FROM this data set. Also, note that the cases 
 -- where there is no location are returned with [Unknown]/NULL for all values. We add that as a separate location
 -- in case that needs to be updated latest to specify online or Steam. If that's the case, it is easier to do that
 -- here than to allow a nullable feature key in the Souvenir table and have to update every souvenir.
-SELECT distinct isnull(City, '[Unknown]'), 
+SELECT DISTINCT isnull(City, '[Unknown]'), 
                 isnull(Region, '[Unknown]'),
                 isnull(Country, '[Unknown]'),Longitude,Latitude
-from TempSouvenirs
--- Do an insert using that selection to fill out the TravelLocation table
-insert into TravelLocation (City, Region, Country, Longitude, Latitude)    
-    SELECT distinct isnull(City, '[Unknown]'), 
+FROM TempSouvenirs
+-- Do an INSERT using that selection to fill out the TravelLocation table
+INSERT INTO TravelLocation (City, Region, Country, Longitude, Latitude)    
+    SELECT DISTINCT isnull(City, '[Unknown]'), 
                     isnull(Region, '[Unknown]'),
                     isnull(Country, '[Unknown]'),Longitude,Latitude
-    from TempSouvenirs
+    FROM TempSouvenirs
 -- Confirm.
 SELECT * FROM TravelLocation;
 
@@ -83,7 +83,7 @@ JOIN TravelLocation AS TL ON
 AND    isnull(TL.Longitude,9999) = isnull(TS.Longitude,9999)
 JOIN Category AS C ON C.Name = TS.Category
 -- Use this test query to now populate the Souvenir table
-insert into Souvenir (OwnerID, TravelLocationID, CategoryID, [Name], Description, Weight, Price, DateObtained)    
+INSERT INTO Souvenir (OwnerID, TravelLocationID, CategoryID, [Name], Description, Weight, Price, DateObtained)    
     SELECT  O.OwnerID, 
         TL.TravelLocationID, 
         C.CategoryID, 
@@ -106,7 +106,7 @@ SELECT * FROM Souvenir;
 
 
 -- Testing and Validation
--- Reconstruct the original dataset from the Souvenir Database. Export this and compare externally to make sure they match.
+-- Reconstruct the original dataset FROM the Souvenir Database. Export this and compare externally to make sure they match.
 -- This confirms that we didn't lose or mangle any data in transferring it into the database. 
 -- NOTE: I used this tutorial on how to programmatically compare two Excel files for differences. 
 -- https://trumpexcel.com/compare-two-excel-sheets/. There are differences in the formatting of header titles and including
@@ -135,16 +135,16 @@ drop table TempSouvenirs;
 
 -- Update
 -- 1
--- Video games need to be seperated from the Toy category
+-- Video games need to be seperated FROM the Toy category
 -- * Add a new Video Game category
 -- * Update souvenirs that are video games with the new category
-insert into Category ([Name])    
+INSERT INTO Category ([Name])    
     SELECT 'Video Game'
 -- Confirm.
 SELECT * FROM Category;
 
-update Souvenir 
-    set CategoryID = (SELECT CategoryID FROM Category WHERE [Name]='Video Game')
+UPDATE Souvenir 
+    SET CategoryID = (SELECT CategoryID FROM Category WHERE [Name]='Video Game')
 WHERE SouvenirID IN (
         SELECT SouvenirID
         FROM Souvenir AS S
@@ -158,8 +158,8 @@ WHERE S.[Description] LIKE '%Video game%'
 
 -- 2
 -- Jewelry boxes should be recategorized as Miscellaneous
-update Souvenir
-    set CategoryID = (SELECT CategoryID FROM Category WHERE [Name]='Miscellaneous')
+UPDATE Souvenir
+    SET CategoryID = (SELECT CategoryID FROM Category WHERE [Name]='Miscellaneous')
 WHERE SouvenirID IN (
         SELECT SouvenirID
         FROM Souvenir AS S
@@ -180,13 +180,13 @@ WHERE S.[Name] IN ('Shamisen', 'Egyptian Drum', 'Zuffolo')
 -- Check to see if there is already a category for Musical Instruments
   SELECT * FROM Category
 -- There is no musical instrument category so add that to the list, first.
-insert into Category ([Name])    
+INSERT INTO Category ([Name])    
     SELECT 'Musical Instrument'
 -- Confirm.
 SELECT * FROM Category;
 -- Update the category
-update Souvenir
-    set CategoryID = (SELECT CategoryID FROM Category WHERE [Name]='Musical Instrument')
+UPDATE Souvenir
+    SET CategoryID = (SELECT CategoryID FROM Category WHERE [Name]='Musical Instrument')
 WHERE SouvenirID IN (
         SELECT SouvenirID
         FROM Souvenir AS S
@@ -208,7 +208,7 @@ SELECT SouvenirID, S.[Name], Weight
  WHERE Weight =  (
      SELECT MAX(Weight) FROM Souvenir)
 -- Delete the souvenir we just found
-delete from Souvenir
+DELETE FROM Souvenir
 where SouvenirID = (
     SELECT SouvenirID
     FROM Souvenir AS S
@@ -227,7 +227,7 @@ SELECT SouvenirID, [Name], Description
  FROM Souvenir 
  WHERE ([Name] LIKE '%dirt%') OR ([Name] LIKE '%sand%')
  -- Delete the souvenirs we just found
-delete from Souvenir
+DELETE FROM Souvenir
 where SouvenirID IN (
     SELECT SouvenirID
     FROM Souvenir 

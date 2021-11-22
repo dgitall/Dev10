@@ -1,6 +1,8 @@
 -- DQL Assessment
 -- Step 3
 
+use Souvenirs
+
 -- 1
 -- Get the 3 most inexpensive souvenirs. Then get the 7 most expensive souvenirs.
 SELECT TOP 3 *
