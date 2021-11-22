@@ -37,7 +37,7 @@ GROUP BY C.CategoryID, C.[Name]
 -- Note: It is unclear in the question what exactly shouldn't be duplicated. The assumption here
 -- is that we will not return the same souvenir more than once in the query. This seems trivial with the 
 -- current database configuration, but it was tricky to load the data to not duplicate the locations. 
-SELECT DISTINCT SouvenirID, S.[Name], C.Name, TL.City, TL.Region, TL.Country, TL.Longitude, TL.Latitude
+SELECT DISTINCT SouvenirID, S.[Name], C.Name AS CategoryName, TL.City, TL.Region, TL.Country, TL.Longitude, TL.Latitude
 FROM Souvenir AS S
 JOIN TravelLocation AS TL ON S.TravelLocationID = TL.TravelLocationID
 JOIN Category AS C ON S.CategoryID = C.CategoryID
@@ -45,20 +45,21 @@ WHERE C.Name = 'Kitchenware'
 -- NOTE: Here's another interpretation. If we want no repitition in the location it is more complicated since we want to, but can't,
 -- do a DISTINCT selection off of just one value (TravelLocationID) yet still return all of the other values. I
 -- used an approach outlined at https://stackoverflow.com/questions/11937206/sql-query-multiple-columns-using-distinct-on-one-column-only
--- which uses a subquery to create an intermediate table with the SourvenirIDs of the distinct TravelLocationIDs. 
+-- which uses a subquery to create an intermediate table with the SourvenirIDs of the distinct TravelLocationIDs of Kitcheware. 
 SELECT b.SouvenirID, b.[Name], C.Name, TL.City, TL.Region, TL.Country, TL.Longitude, TL.Latitude
 FROM   (
         SELECT DISTINCT MAX(SouvenirID) AS SouvenirID,
         TravelLocationID
-        FROM   Souvenir
-        GROUP BY
-              TravelLocationID
+        FROM   Souvenir AS S
+        JOIN Category AS C ON S.CategoryID = C.CategoryID
+        WHERE C.Name = 'Kitchenware'
+        GROUP BY TravelLocationID
    ) AS a
 INNER JOIN Souvenir b
     ON  a.SouvenirID = b.SouvenirID
 JOIN TravelLocation AS TL ON a.TravelLocationID = TL.TravelLocationID
 JOIN Category AS C ON b.CategoryID = C.CategoryID
-ORDER BY a.TravelLocationID
+ORDER BY a.SouvenirID
 
 -- 6
 -- Find the earliest and latest obtained date for each owner, ordered by the earliest of the
@@ -118,8 +119,24 @@ WHERE Weight > (
 
 -- 11
 -- Find the most expensive and least expensive souvenir in each category
-SELECT C.[Name] AS CategoryName, MAX(Price) AS MostExpensive, MIN(Price) AS LeastExpensive
-FROM Souvenir AS S
-JOIN Category AS C ON S.CategoryID = C.CategoryID
-GROUP BY C.Name
-ORDER BY C.Name
+-- NOTE: The question does not specify what to do in the event of a tie.
+-- The approach here returns all of the sourvenirs for each category with the 
+-- highest/lowest price for that category in the same table. It looks a little odd at first since the number of
+-- distinct souvenirs returned for the highest or lowest price may not be the. In that case,
+-- sourvenirs in the shorter list are repeated. 
+SELECT A.CategoryName AS CategoryName, 
+    S1.Name AS MostExpensiveSouvenir, 
+    A.MostExpensive AS HighPrice, 
+    S2.Name AS LeastExpensiveSouvenir, 
+    A.LeastExpensive AS LowPrice
+FROM (
+    -- Get a table of the max/min prices for each category
+    SELECT C.[Name] AS CategoryName, C.CategoryID, MAX(Price) AS MostExpensive, MIN(Price) AS LeastExpensive
+    FROM Souvenir AS S
+    JOIN Category AS C ON S.CategoryID = C.CategoryID
+    GROUP BY C.Name, C.CategoryID) AS A
+-- Join with souvenir based on the most expensive match
+JOIN Souvenir AS S1 ON S1.Price = A.MostExpensive AND S1.CategoryID=A.CategoryID
+-- Join with souvenir base on the least expensive match
+JOIN Souvenir AS S2 ON S2.Price = A.LeastExpensive AND S2.CategoryID=A.CategoryID
+ORDER BY CategoryName

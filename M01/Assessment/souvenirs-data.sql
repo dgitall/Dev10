@@ -1,5 +1,5 @@
 -- Prior to this, the denormalized souvenirs data was loaded into a TempSouvenirs table
--- using the SQL Server Import extension
+-- using the SQL Server Import extension using all of the suggested data type settings
 
 use Souvenirs
 SELECT * FROM TempSouvenirs
@@ -129,8 +129,9 @@ SELECT
     JOIN Owner AS O ON S.OwnerID = O.OwnerID
     JOIN TravelLocation AS TL ON S.TravelLocationID = TL.TravelLocationID;
 
-SELECT * FROM TempSouvenirs
 
+-- We are finished loading data so remove the tempory data table
+drop table TempSouvenirs;
 
 -- Update
 -- 1
@@ -143,12 +144,17 @@ insert into Category ([Name])
 SELECT * FROM Category;
 
 update Souvenir 
-    set CategoryID = 56
+    set CategoryID = (SELECT CategoryID FROM Category WHERE [Name]='Video Game')
 WHERE SouvenirID IN (
         SELECT SouvenirID
         FROM Souvenir AS S
         JOIN Category AS C ON C.CategoryID = S.CategoryID
         WHERE (C.Name = 'Toy') AND S.[Description] LIKE '%Video game%')
+-- Confirm
+SELECT SouvenirID, S.Name, S.[Description], C.Name
+FROM Souvenir AS S
+JOIN Category AS C ON C.CategoryID = S.CategoryID
+WHERE S.[Description] LIKE '%Video game%'
 
 -- 2
 -- Jewelry boxes should be recategorized as Miscellaneous

@@ -1,0 +1,148 @@
+Souvenier_Name,Souvenier_Description,Category,City,Region,Country,Owner,Longitude,Latitude,Price,Weight,DateObtained
+Grizzly Bear Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-105.688103,40.343182,7.5,12,2019-02-15T00:00:00.0000000
+Snowy Mountain Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-105.688103,40.343182,9.99,20,2019-02-17T00:00:00.0000000
+Lobster Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-82,38,12.99,16,2019-03-05T00:00:00.0000000
+Sea Lion Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-153.433334,57.466667,10.25,16,2019-04-18T00:00:00.0000000
+Coral Reef Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-169.523895,16.736944,6.91,20,2019-05-07T00:00:00.0000000
+Ocean Life Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-171.733337,25.700001,8.99,12,2019-06-15T00:00:00.0000000
+Landscape Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-91.504852,38.865097,9.75,16,2019-07-21T00:00:00.0000000
+Bird Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-119.930984,39.198364,13.25,24,2019-08-01T00:00:00.0000000
+Dunes Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-106.171669,32.77972,11.4,20,2019-09-15T00:00:00.0000000
+Skier Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-110.821999,43.582767,19.99,12,2019-10-15T00:00:00.0000000
+Desert Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-115.510399,35.141689,14.25,16,2019-11-09T00:00:00.0000000
+Mountain City Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-105.688103,40.343182,12.99,20,2019-11-27T00:00:00.0000000
+Joshua Tree Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-115.90065,33.881866,12.5,12,2019-12-04T00:00:00.0000000
+River View Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-92.757652,35.985512,11.99,20,2020-01-15T00:00:00.0000000
+Hot Springs Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-93.042267,34.52153,10.75,16,2020-02-13T00:00:00.0000000
+Cave Bat Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-110.347382,31.837551,10.99,12,2020-03-15T00:00:00.0000000
+Cowboy Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-110.821999,43.582767,15,12,2021-01-11T00:00:00.0000000
+Buffalo Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-92.757652,35.985512,12.25,20,2021-02-28T00:00:00.0000000
+Gila Monster Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-115.510399,35.141689,9.95,16,2021-03-26T00:00:00.0000000
+Pink Mug,NULL,Kitchenware,NULL,NULL,NULL,Group 3,-169.523895,16.736944,25,24,2021-05-08T00:00:00.0000000
+Central Park-dirt,"Very good dirt. Solid, reliable.",Geological,New York City,New York,United States,Group 5,NULL,NULL,0,4,2007-03-21T00:00:00.0000000
+Hollywood Bowl-dirt,Dry and depressing,Geological,Los Angeles,California,United States,Group 5,NULL,NULL,0,4,2009-08-01T00:00:00.0000000
+Burham Park-dirt,Tastes rich in Oxygen,Geological,Chicago,Illinois,United States,Group 5,NULL,NULL,0,4,2010-03-11T00:00:00.0000000
+Playa Tortugas-sand,Unimagineable feeling between the toes,Geological,Cancun,Quintana Roo,Mexico,Group 5,NULL,NULL,0,4,2015-12-25T00:00:00.0000000
+Bukhansan National Park-dirt,High in phosphates,Geological,Seoul,Gyeonggi,South Korea,Group 5,NULL,NULL,0,4,2018-04-22T00:00:00.0000000
+Wuhan Institute of Virology-dirt,"There's something fishy in here, got sick after tasting it…",Geological,Wuhan,Hubei,China,Group 5,NULL,NULL,0,4,2019-09-28T00:00:00.0000000
+TEL AVIV BEACH-sand,Very soft,Geological,Tel Aviv,Tel Aviv,Israel,Group 5,NULL,NULL,0,4,2020-06-12T00:00:00.0000000
+Bourscheid Neige Luges-dirt,Smallest dirt on earth. Pathetic,Geological,Luxembourg,Luxembourg,Luxembourg,Group 5,NULL,NULL,0,4,2020-08-20T00:00:00.0000000
+Lagoon Beach-sand,It's coarse. Gets everywhere. I don't like it,Geological,Cape Town,Western Cape,South Africa,Group 5,NULL,NULL,0,4,2020-09-20T00:00:00.0000000
+Champ de Mars-dirt,Tastes like they have never won a war,Geological,Paris,Ile-de-France,France,Group 5,NULL,NULL,0,4,2021-02-20T00:00:00.0000000
+Playa del Carmen-sand,"Very soft, great color",Geological,Playa del Carmen,Quintana Roo,Mexico,Group 5,NULL,NULL,0,4,2021-07-20T00:00:00.0000000
+Playa Punta Esmeralda-sand,"Medium coarseness, tons of shells",Geological,Playa del Carmen,Quintana Roo,Mexico,Group 5,NULL,NULL,0,4,2021-12-20T00:00:00.0000000
+Hyde Park-dirt,Looks very rich. I got a worm in here!,Geological,London,London,England,Group 5,NULL,NULL,0,4,2021-02-20T00:00:00.0000000
+National Park-dirt,BASIC,Geological,Nice,Alpes-Maritimes,France,Group 5,NULL,NULL,0,4,2021-01-20T00:00:00.0000000
+Promenade des Anglais-sand,Neat.,Geological,Ulaanbaatar,Ulaanbaatar,Mongolia,Group 5,NULL,NULL,0,4,2021-03-20T00:00:00.0000000
+Hikkaduwa Beach-sand,Lots of critters and life. Kinda stinky,Geological,Colombo,Western Province,Sri Lanka,Group 5,NULL,NULL,0,4,2017-08-20T00:00:00.0000000
+Al Bustan Beach-sand,Very Nice,Geological,Muscat,Muscat,Oman,Group 5,NULL,NULL,0,4,2014-01-20T00:00:00.0000000
+Palm Beach-sand,Exotic,Geological,Ambondrona,Diana,Madagascar,Group 5,NULL,NULL,0,4,2000-06-20T00:00:00.0000000
+Parco delle fonti-dirt,Better dirt than expected,Geological,Meldola,Forlì-Cesena,Italy,Group 5,NULL,NULL,0,4,2004-09-20T00:00:00.0000000
+Park Lenina-dirt,"Hints of nostalgia from the great days of the USSR; however, a bit stale",Geological,Makaryev,Kostroma Oblast,Russia,Group 5,NULL,NULL,0,4,2018-07-20T00:00:00.0000000
+Quartz rock,Common white quartz found in Utah,Geological,Beaver,Utah,United States,Group 4,NULL,NULL,0,NULL,2020-06-01T00:00:00.0000000
+NYC bronze ornament,Bronze NYC ornament bought from visitors center,Miscellaneous,New York City,New York,United States,Group 4,NULL,NULL,0,NULL,2019-12-30T00:00:00.0000000
+Texas Pen,Souvenir shop item commemorating the second ammendment.,Tool,Dallas,Texas,United States,Group 4,NULL,NULL,0,NULL,2021-01-02T00:00:00.0000000
+I Got Tipsy In Key West shot glass,Cute shot glass from Key West Florida,Kitchenware,Key West,Florida,United States,Group 4,NULL,NULL,0,NULL,2020-12-25T00:00:00.0000000
+PCB T-Shirt,Sick T-Shirt from a wild PCB spring break back in '99,Clothing,Panama City Beach,Florida,United States,Group 4,NULL,NULL,0,NULL,1999-04-27T00:00:00.0000000
+Daytona 500 Hat,Raise hell and praise Dale,Clothing,Daytona Beach,Florida,United States,Group 4,NULL,NULL,0,NULL,2008-02-05T00:00:00.0000000
+9/11 bronze ornament,9/11 Memorial bronze ornament,Miscellaneous,Washington DC,Washington DC,United States,Group 4,NULL,NULL,0,NULL,2020-03-14T00:00:00.0000000
+Super Soaker,Started a squirt gun fight that ended the Cuban Missile Crisis,Toy,Havana,La Habana,Cuba,Group 4,NULL,NULL,0,NULL,1962-08-20T00:00:00.0000000
+Oxygen Not Included,Video game bought on Steam,Toy,NULL,NULL,NULL,Group 4,NULL,NULL,0,NULL,2019-07-20T00:00:00.0000000
+Stardew Valley,Video game bought on Steam,Toy,NULL,NULL,NULL,Group 4,NULL,NULL,0,NULL,2019-05-01T00:00:00.0000000
+Panda Pencil Holder,"Pencil case with a panda hugging it. ",Tool,Beijing,Hebei,China,Group 4,NULL,NULL,0,NULL,2014-07-01T00:00:00.0000000
+Shiny Limited Edition Charzard,Pokemon Card,Toy,Minneapolis,Minnesota,United States,Group 4,NULL,NULL,0,NULL,2010-06-10T00:00:00.0000000
+Diamonds,"Loot gained from besting pirates. ",Geological,Babati,Manyara,Tanzania,Group 4,NULL,NULL,0,NULL,2008-08-07T00:00:00.0000000
+Swim Suit,Blue Swim Suit from Toronto water park,Clothing,Toronto,Ontario,Canada,Group 4,NULL,NULL,0,NULL,2019-01-01T00:00:00.0000000
+Taxidermy Tazmanian Devil,Taxidermy tazmanian devil,Miscellaneous,Babati,Manyara,Tanzania,Group 4,NULL,NULL,0,NULL,2000-06-13T00:00:00.0000000
+Emerald,Rare green crystal,Geological,Babati,Manyara,Tanzania,Group 4,NULL,NULL,0,NULL,2011-08-15T00:00:00.0000000
+Topaz,Orange crystal found at Utah's Topaz Mountain,Geological,Topaz Mountain,Utah,United States,Group 4,NULL,NULL,0,NULL,1982-03-11T00:00:00.0000000
+Ruby,Rare red crystal,Geological,Babati,Manyara,Tanzania,Group 4,NULL,NULL,0,NULL,1937-02-25T00:00:00.0000000
+Gordon Ramsey's Filet Knife,The Chef's favorite knife,Kitchenware,London,London,England,Group 4,NULL,NULL,0,NULL,1998-07-11T00:00:00.0000000
+Rian Johnson's Creativity,Rian Johnson's Creativity that he lost before he directed the Last Jedi,Artifact,Hollywood,California,United States,Group 4,NULL,NULL,0,NULL,2016-05-20T00:00:00.0000000
+Replica George Washington Wood Teeth,Commemorative replica of the first President's fabled wooden teeth,Artifact,Washington DC,Washington DC,United States,Group 4,NULL,NULL,0,NULL,2003-03-03T00:00:00.0000000
+Red Beryl,Rarest and most expensive crystal,Geological,Beaver,Utah,United States,Group 4,NULL,NULL,0,NULL,2011-07-11T00:00:00.0000000
+Shield of Solitude,Powerful shield belonging to the guard order of the town of Solitude,Artifact,Solitude,Haafingar Hold,Skyrim,Group 4,NULL,NULL,0,NULL,2014-05-19T00:00:00.0000000
+LoL Player's Sanity,They said it didn't exist,Miscellaneous,Milwaukee,Wisconsin,United States,Group 4,NULL,NULL,0,NULL,2021-02-26T00:00:00.0000000
+Ancient Helmet of the Unburned,Helmet that provides elemental resistance,Clothing,Labyrinthian,Shalidor's Maze,Skyrim,Group 4,NULL,NULL,0,NULL,2010-06-23T00:00:00.0000000
+The Pink Panther,The prized jewel of France worn by Beyonce,Geological,Paris,Ile-de-France,France,Group 4,NULL,NULL,0,NULL,2009-03-30T00:00:00.0000000
+Dwemer Lexicon,Item invented by the Dwemer to store culture's knowledge,Artifact,Riften Docks,Riften,Skyrim,Group 4,NULL,NULL,0,NULL,2011-07-12T00:00:00.0000000
+Rasputin's Hat,The hat of Rasputin (from the song),Clothing,Moscow,Central Russia,Russia,Group 4,NULL,NULL,0,NULL,2011-11-11T00:00:00.0000000
+"Infinity Edge ",Attack damage and critical strike,Artifact,The Fountain,Summoners Rift,Freljord,Group 4,NULL,NULL,0,NULL,2021-05-18T00:00:00.0000000
+Skeleton Key,Unbreakable lockpick,Tool,Thieves' Guild,Thieves' Guild,Skyrim,Group 4,NULL,NULL,0,NULL,2012-10-30T00:00:00.0000000
+Hitler's Mustache,Hitler's iconic mustache,Artifact,Hamburg,Hamburg,Germany,Group 4,NULL,NULL,0,NULL,1940-04-30T00:00:00.0000000
+Da Vinci's Code,I stole this from Tom Hanks,Artifact,Vatican City,Vatican City,Vatican City,Group 4,NULL,NULL,0,NULL,2000-06-14T00:00:00.0000000
+BF Sword,"A lot of attack damage. ",Artifact,The Fountain,Summoners Rift,Freljord,Group 4,NULL,NULL,0,NULL,2021-05-18T00:00:00.0000000
+The Last Supper,Mural painting by Italian artist Leonardo da Vinci,Art,Milan,Lombardy,Italy,Group 4,NULL,NULL,0,NULL,1490-04-17T00:00:00.0000000
+Mona Lisa,Portrait painting by Italian artist Leonardo da Vinci,Art,Florence,Tuscany,Italy,Group 4,NULL,NULL,0,NULL,1507-05-20T00:00:00.0000000
+Sphinx,Limestone sculpure,Art,Cairo,Greater Cairo Regional Unit,Egypt,Group 4,NULL,NULL,0,NULL,2020-09-12T00:00:00.0000000
+Eiffle Tower Postcard,Wrought-iron lattice tower,Postcard,Paris,Ile-de-France,France,Group 4,NULL,NULL,0,NULL,1887-01-28T00:00:00.0000000
+Mount Everest Postcard,Tallest mountain in the world,Postcard,Qing Zang Gaoyuan,Himalayas,Nepal,Group 4,NULL,NULL,0,NULL,2003-02-14T00:00:00.0000000
+Tenugui Cotton Cloth Rice Grains,NULL,Clothing,Niigata,Echigo,Japan,Group 1,NULL,NULL,15,6.7,2007-01-10T00:00:00.0000000
+12'' Ancient Traditional Korea Hanbok Doll,NULL,Toy,Seoul,Gyeonggi,South Korea,Group 1,NULL,NULL,20.8,19.36,2008-06-18T00:00:00.0000000
+Resort Snowglobe,NULL,Miscellaneous,Orlando,Florida,United States,Group 1,NULL,NULL,29.95,13.4,2019-12-23T00:00:00.0000000
+Iron Standing Dog,NULL,Miscellaneous,New Delhi,Haryana,India,Group 1,NULL,NULL,50,5,2020-12-02T00:00:00.0000000
+Crafts Enameled Cockatoo,NULL,Art,Atlanta,Georgia,United States,Group 1,NULL,NULL,40,10,2020-12-02T00:00:00.0000000
+Hand Painted Rose Flower,NULL,Art,Manchester,Lancashire,England,Group 1,NULL,NULL,25,5,2013-08-23T00:00:00.0000000
+Hand Painted Enameled Telephone,NULL,Art,Warsaw,Mazovia,Poland,Group 1,NULL,NULL,15,6.88,2016-05-15T00:00:00.0000000
+Cast Iron Door Stop,NULL,Miscellaneous,Toronto,Ontario,Canada,Group 1,NULL,NULL,22,8,2018-05-18T00:00:00.0000000
+Organic Maple Syrup,"      ",Food,Paris,Ile-de-France,France,Group 1,NULL,NULL,22.95,10,2015-05-08T00:00:00.0000000
+Eiffel Tower Model,NULL,Art,Lima,Lima,Peru,Group 1,NULL,NULL,9.99,5,2000-01-01T00:00:00.0000000
+Metal Jewelry Box,NULL,Art,Washington DC,Washington DC,United States,Group 1,NULL,NULL,10,6,2018-05-18T00:00:00.0000000
+Alpaca Poncho,NULL,Clothing,Melbourne,Victoria,Australia,Group 1,NULL,NULL,49.99,20,2002-08-03T00:00:00.0000000
+Classic Vintage Antique Heart Shape Jewelry Box,NULL,Art,Nairobi,Nairobi,Kenya,Group 1,NULL,NULL,20,18,2020-08-05T00:00:00.0000000
+Chicago Cubs T-Shirt,NULL,Clothing,Beijing,Hebei,China,Group 1,NULL,NULL,19.99,5,2016-09-23T00:00:00.0000000
+"Decorative African Wood Mask ",NULL,Art,Chicago,Illinois,United States,Group 1,NULL,NULL,35.99,15,1999-12-24T00:00:00.0000000
+American Flag,NULL,Miscellaneous,Washington DC,Washington DC,United States,Group 1,NULL,NULL,2,1,2016-07-04T00:00:00.0000000
+Shot Glass,NULL,Kitchenware,Berlin,Brandenburg,Germany,Group 1,NULL,NULL,8.95,4.2,2007-07-07T00:00:00.0000000
+Vintage Maori Carving Intricate Patu Club & Long House Box Polynesian Art,NULL,Artifact,Melbourne,Victoria,Australia,Group 1,NULL,NULL,41.16,8.47,2021-05-18T00:00:00.0000000
+"80"" Rare 100% Purple Natural Emerald Jadeite Jade Dragon""",NULL,Artifact,Beijing,Hebei,China,Group 1,NULL,NULL,1800000,17637,2021-12-25T00:00:00.0000000
+Mickey Mouse Shotglass,I got this because it was so weird that they sell Disney shotglasses! Does Mickey Mouse do shots?,Kitchenware,New York City,New York,United States,Group 2,NULL,NULL,25.99,2.5,2021-04-02T00:00:00.0000000
+Gold Spoon,Does the Queen use this to stir her tea?,Kitchenware,London,London,England,Group 2,NULL,NULL,50,4,2020-01-05T00:00:00.0000000
+Fancy Scarf,"The color is so intense, I love it!",Clothing,Munich,Bavaria,Germany,Group 2,NULL,NULL,45,8,1998-06-12T00:00:00.0000000
+Smooth Rock,"I found it on the beach, it's so nice and round!",Geological,Barcelona,Catalonia,Spain,Group 2,NULL,NULL,0,4,2001-02-15T00:00:00.0000000
+Eiffel Tower Shotglass,"Yeah, sure, maybe it's basic.",Kitchenware,Paris,Ile-de-France,France,Group 2,NULL,NULL,14.99,2,2005-12-17T00:00:00.0000000
+Hand-bound sketchbook,Someone made this by hand! It's so nice and it smells like leather.,Book,Sydney,New South Wales,Australia,Group 2,NULL,NULL,35,20,1999-11-23T00:00:00.0000000
+Stone Shotglass,"It's heavy, but it's cool to drink out of!",Kitchenware,Copenhagen,Capital,Denmark,Group 2,NULL,NULL,17.99,5,2013-10-30T00:00:00.0000000
+Weird spoon,Why is it shaped like that? It looks so strange but so cool!,Kitchenware,Helsinki,Uusimaa,Finland,Group 2,NULL,NULL,12.99,6,2012-05-24T00:00:00.0000000
+City postcard,It really is a nice skyline,Postcard,Los Angeles,California,United States,Group 2,NULL,NULL,2.99,1,2015-07-15T00:00:00.0000000
+Red scallop shell,"It fits perfectly in the palm of my hand, and the stripes are so cute!",Miscellaneous,Miami,Florida,United States,Group 2,NULL,NULL,0,1.5,2021-01-08T00:00:00.0000000
+Egyptian Drum,"I think the top of the drum is made from papayrus, it sounds really awesome!",Miscellaneous,Cairo,Greater Cairo Regional Unit,Egypt,Group 2,NULL,NULL,60,34,2012-06-28T00:00:00.0000000
+Ink Artbook,These drawings were handmade! The ink strokes are so beautiful,Book,Beijing,Hebei,China,Group 2,NULL,NULL,29.99,18,2007-12-30T00:00:00.0000000
+Manga,Don't judge me! I really like this one. The characters are cute AND deep.,Book,Tokyo,Kanto,Japan,Group 2,NULL,NULL,15.99,21,2010-01-05T00:00:00.0000000
+Black Rock,"It's so dark, and so smooth!",Geological,Seoul,Gyeonggi,South Korea,Group 2,NULL,NULL,0,5,1995-11-04T00:00:00.0000000
+Sunset Postcard,The view is so unbelievable... the sky really looked like that in person!,Postcard,Bangkok,Central Thailand,Thailand,Group 2,NULL,NULL,1,0.75,2007-08-01T00:00:00.0000000
+Sari,"It's so beautiful, and the patterns were sewn by hand!",Clothing,Mumbai,Maharashtra,India,Group 2,NULL,NULL,120,86,2014-06-14T00:00:00.0000000
+Petronas Towers Postcard,They're so tall but so beautiful! I want to live in a city like this,Postcard,Kuala Lumpur,Selangor,Malaysia,Group 2,NULL,NULL,0.8,1,2011-04-05T00:00:00.0000000
+Union Jack Shotglass,"My cousin bought this for me when I visited because she wouldn't stop roasting me for being a tourist.... it's ironic, I promise.",Kitchenware,Liverpool,Lancashire,England,Group 2,NULL,NULL,12.99,3,2019-01-18T00:00:00.0000000
+Shiny Shell,"The inside of the shell is iridescent, like a pearl. I wonder what this shell comes from.",Miscellaneous,Perth,Western Australia,Australia,Group 2,NULL,NULL,0,2,2018-03-25T00:00:00.0000000
+Kangaroo Postcard,Who doesn't love a kangaroo? Aww....,Postcard,Auckland,North Island,New Zealand,Group 2,NULL,NULL,1.2,1,2017-02-23T00:00:00.0000000
+Ancient Roman Spoon,They say they made this with the same methods that Ancient Romans used. It's that why it's so lopsided?,Kitchenware,Rome,Lazio,Italy,Group 2,NULL,NULL,22.99,3,2001-06-06T00:00:00.0000000
+Zuffolo,It's a little flute made of wood! The sound is deeper than I was expecting.,Miscellaneous,Venice,Veneto,Italy,Group 2,NULL,NULL,45.5,15,2002-10-19T00:00:00.0000000
+Blouse,"I never wear it because I'm too afraid of damaging the beadwork, but it looks so elegant and expensive.",Clothing,Naples,Campania,Italy,Group 2,NULL,NULL,60,5,2003-09-12T00:00:00.0000000
+Maple Leaf Shotglass,Sometimes I fill this up with maple syrup to pour on my pancakes.... is that a disrespectful stereotype?,Kitchenware,Toronto,Ontario,Canada,Group 2,NULL,NULL,9.5,4,2004-10-27T00:00:00.0000000
+Moose Photographs,I love books with nature photographs... I didn't know moose (meese? mooses?) were so BIG!,Book,Montreal,Quebec,Canada,Group 2,NULL,NULL,17.99,19,2008-05-15T00:00:00.0000000
+Cookbook,I'm going to learn how to make borsct! It's gonna happen!,Book,Moscow,Central Russia,Russia,Group 2,NULL,NULL,15.6,17,2005-12-13T00:00:00.0000000
+Sunglasses,These are honestly the best aviators I've ever worn. I'm gonna wear them until they break!,Clothing,Edinburgh,Lothian,Scotland,Group 2,NULL,NULL,14.99,6,2021-01-18T00:00:00.0000000
+Story Bridge,"It was so beautiful to see the bridge all lit up for Christmas, I'll never forget it!",Postcard,Brisbane,Queensland,Australia,Group 2,NULL,NULL,1.25,1,2013-12-25T00:00:00.0000000
+Long Walk to Freedom,This was such an incredible read.,Book,Johannesburg,Gauteng,South Africa,Group 2,NULL,NULL,14.69,22,1999-12-31T00:00:00.0000000
+Headscarf,It's so soft and light. It really helped to keep me cool while I was visiting.,Clothing,Casablanca,Casablanca-Settat,Morocco,Group 2,NULL,NULL,35.99,7,2011-06-16T00:00:00.0000000
+Olive Spoon,Who knew they made special spoons for eating olives? Not me!,Kitchenware,Athens,Attica,Greece,Group 2,NULL,NULL,22.25,6,2006-07-08T00:00:00.0000000
+Carnival Postcard,"Picture of the famous Patras Carnival, one of the biggest in all of Europe!",Postcard,Patras,Peloponnese,Greece,Group 2,NULL,NULL,0.99,1,2016-04-15T00:00:00.0000000
+Architecture Book,An overview of the designs used in the old structures and buildings in Paris.,Book,Paris,Ile-de-France,France,Group 2,NULL,NULL,49.99,20,2015-04-28T00:00:00.0000000
+Beach Postcard,A picture of the beautiful beach at Cannes!,Postcard,Cannes,Alpes-Maritimes,France,Group 2,NULL,NULL,1.99,1,2014-11-11T00:00:00.0000000
+Tourist Shirt,"Has ""I <3 Chicago"""" on the front.""",Clothing,Chicago,Illinois,United States,Group 2,NULL,NULL,12.99,5,2000-01-01T00:00:00.0000000
+TI-89,Very helpful for my algebra homework!,Miscellaneous,Dallas,Texas,United States,Group 2,NULL,NULL,99.99,8,1998-08-19T00:00:00.0000000
+Obsidian,"Wow, it's made from crystalized lava!",Geological,Aberdeen,New South Wales,Australia,Group 2,NULL,NULL,18.99,12,2014-08-13T00:00:00.0000000
+Dirndl,Now I have something to wear when my German inlaws invite me to Oktoberfest.,Clothing,Frankfurt,Hesse,Germany,Group 2,NULL,NULL,69.99,10,1997-02-26T00:00:00.0000000
+Clamshell,A classic clamshell.,Miscellaneous,Madrid,Community of Madrid,Spain,Group 2,NULL,NULL,0,3.5,2000-04-19T00:00:00.0000000
+Jorge Ben Jor Autobiography,A book about the life of one of Brazil's most iconic pop artists of the 20th century.,Book,Rio de Janeiro,Rio de Janeiro,Brazil,Group 2,NULL,NULL,16.49,9,2005-09-01T00:00:00.0000000
+Cristo Redentor Shotglass,He would be so proud.,Kitchenware,Rio de Janeiro,Rio de Janeiro,Brazil,Group 2,NULL,NULL,12.29,2,2021-09-21T00:00:00.0000000
+Poncho,"Authentic and cozy, just what I always wanted",Clothing,Buenos Aires,Buenos Aires,Argentina,Group 2,NULL,NULL,42,24,2016-10-10T00:00:00.0000000
+Shikumen Postcard,A picture of a neighborhood with shikumen architecture.,Postcard,Shanghai,East China,China,Group 2,NULL,NULL,2.5,1,2020-09-10T00:00:00.0000000
+Shamisen,"It was really expensive and I don't know how to play it, but it's super cool.",Miscellaneous,Kyoto,Kyoto,Japan,Group 2,NULL,NULL,1640,36,2001-01-25T00:00:00.0000000
+Small Wooden Spoon,For portioning spices like sambal,Kitchenware,Surabaya,East Java,Indonesia,Group 2,NULL,NULL,6,3,2005-10-17T00:00:00.0000000
+Like Water for Chocolate,I asked the bookstore clerk what they recommended and they gave me this.,Book,Mexico City,Valley of Mexico,Mexico,Group 2,NULL,NULL,1.34,5,2004-11-22T00:00:00.0000000
+Beach Postcard,I think the picture it too heavily photoshopped.,Postcard,Cancun,Quintana Roo,Mexico,Group 2,NULL,NULL,2.99,1,2018-07-02T00:00:00.0000000
+Minneapolis Institute of Art Postcard,Some impressionist art on a postcard from an Minneapolis artist.,Postcard,Minneapolis,Minnesota,United States,Group 2,NULL,NULL,5.99,1,2003-09-06T00:00:00.0000000
+Old Pewter Spoon,Bought from an antique shop. Good for bashing rats,Kitchenware,London,London,England,Group 2,NULL,NULL,17.99,12,2005-11-15T00:00:00.0000000
+Chiton Shell,"I found one half of a large shell, walked a few meters, then found the other half and now keep them sitting next to each other",Miscellaneous,Nice,Alpes-Maritimes,France,Group 2,NULL,NULL,0,16,2001-03-30T00:00:00.0000000
